@@ -16,7 +16,7 @@ A privacy-focused middleware that detects and anonymizes Personally Identifiable
 4. LLM response is de-anonymized and returned to the user
 
 ## Download
-[⬇️ Download Latest APK](https://github.com/<username>/PII-Privacy-Handler-for-LLMs/releases/latest)
+[⬇️ Download Latest APK](https://github.com/<PiyushNile1509>/PII-Privacy-Handler-for-LLMs/releases/latest)
 
 ## Installation
 ```bash
