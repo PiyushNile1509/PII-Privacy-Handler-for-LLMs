@@ -1,0 +1,65 @@
+text,label,entity_type,reason
+My name is Prasad.,0,NAME,"Not required for logic, purely identity info."
+I am Prasad.,0,NAME,Name not used in any operation.
+Myself Prasad.,0,NAME,"Pure introduction, mask name."
+"My name is Prasad, count total characters in my name.",1,NAME,Name is required for the task (counting characters).
+"Name: Prasad Reddy, calculate how many letters are in it.",1,NAME,Needed for computation.
+"The person's name is Prasad, print the initials.",1,NAME,Name required to extract initials.
+"Hi, I'm Prasad, but just display my name reversed.",1,NAME,Name used for operation.
+My phone number is 9876543210.,0,PHONE,Just identity info.
+Contact me at +91 9876543210.,0,PHONE,Not needed for logic.
+"My phone number is 9876543210, add 1234 to it.",1,PHONE,Required for arithmetic operation.
+"Number 9876543210, find sum of its digits.",1,PHONE,Needed for digit calculation.
+"Phone 9876543210, output last 3 digits only.",1,PHONE,Dependent for substring extraction.
+My email is prasad@gmail.com.,0,EMAIL,"No computation, personal info."
+Contact: prasad@gmail.com.,0,EMAIL,Pure identity.
+"Email is prasad@gmail.com, print the domain part.",1,EMAIL,Domain extraction requires full email.
+"My email is prasad@gmail.com, count characters before @.",1,EMAIL,Needed for computation.
+Send mail to prasad@gmail.com.,0,EMAIL,No logic needed.
+"I live at 12 MG Road, Mumbai.",0,ADDRESS,"Sensitive location, not needed."
+"Address: 12 MG Road, Mumbai.",0,ADDRESS,No logic.
+"My address is 12 MG Road, Mumbai, count total characters.",1,ADDRESS,Needed for string operation.
+"I live at 22 Park Avenue, get the PIN code only.",1,ADDRESS,Required to extract subfield (PIN).
+My Aadhaar number is 5678 1234 9876.,0,AADHAAR,Identity only.
+"Aadhaar: 5678 1234 9876, find sum of last 4 digits.",1,AADHAAR,Used in numeric computation.
+PAN: ABCDE1234F,0,PAN,No logic required.
+"PAN: ABCDE1234F, extract only numeric digits.",1,PAN,Dependent for extraction.
+My account number is 1234567890.,0,ACCOUNT,Just sensitive info.
+"Account 1234567890, sum all digits.",1,ACCOUNT,Dependent for computation.
+IFSC code HDFC0001234.,0,IFSC,Not required.
+"IFSC HDFC0001234, extract numeric part.",1,IFSC,Needed for logic.
+I was born on 14/02/1990.,0,DOB,Not used.
+"My DOB is 14/02/1990, calculate my age.",1,DOB,DOB needed to derive age.
+I'm 30 years old.,0,AGE,Static statement.
+"I'm 30 years old, add 5 to get my retirement age.",1,AGE,Age used in arithmetic.
+My employee ID is EMP-778899.,0,EMPLOYEE_ID,Sensitive info.
+"ID EMP-778899, add all digits.",1,EMPLOYEE_ID,Dependent on numeric part.
+I work at Infosys.,0,COMPANY,Identity only.
+"I work at Infosys, count total letters.",1,COMPANY,Name needed for operation.
+Patient ID P-112233.,0,PATIENT_ID,Not needed.
+"Patient P-112233, multiply digits by 2.",1,PATIENT_ID,Required for logic.
+Hospital: Apollo Health.,0,HOSPITAL,Personal info.
+"Hospital name Apollo Health, count characters.",1,HOSPITAL,Required for operation.
+Property ID PROP-445566.,0,PROPERTY_ID,Identification info.
+"PROP-445566, add last 2 digits.",1,PROPERTY_ID,Needed for arithmetic.
+"22 Sky Towers, Pune.",0,ADDRESS,Pure PII.
+GSTIN 27ABCDE1123F1Z8.,0,GSTIN,Identity.
+"GSTIN 27ABCDE1123F1Z8, extract numbers only.",1,GSTIN,Logic required.
+PAN ABCDE1234F.,0,PAN,Not needed.
+"PAN ABCDE1234F, calculate number of digits.",1,PAN,Dependent.
+Instagram: @prasad_official.,0,SOCIAL_HANDLE,Identity only.
+"Handle @prasad_official, count characters before underscore.",1,SOCIAL_HANDLE,Used in string logic.
+prasad@work.com,0,EMAIL,Personal.
+"prasad@work.com, extract username.",1,EMAIL,Logic dependent.
+Roll no. STU-112233.,0,STUDENT_ID,Identity.
+"STU-112233, sum numeric digits.",1,STUDENT_ID,Needed for logic.
+School: DPS Pune.,0,SCHOOL,Identity info.
+"School DPS Pune, count vowels.",1,SCHOOL,Logic uses name.
+I live in Mumbai.,0,CITY,"PII, not needed."
+"City Mumbai, count letters.",1,CITY,Needed for logic.
+I'm from India.,0,COUNTRY,General but still PII.
+"Country India, return first letter.",1,COUNTRY,Dependent for logic.
+My name is Prasad and my phone is 9876543210. Add all digits in my phone number.,1,MIXED,"Phone used for math, name not needed."
+"I'm Aisha, born on 14/02/1990, calculate my age.",1,MIXED,"DOB used to compute age, name masked."
+Email me at prasad@gmail.com and count characters before @.,1,MIXED,Logic depends on email.
+"My Aadhaar is 5678 1234 9876, name is Meena. Return the sum of last 4 Aadhaar digits.",1,MIXED,"Aadhaar for math, name is independent."

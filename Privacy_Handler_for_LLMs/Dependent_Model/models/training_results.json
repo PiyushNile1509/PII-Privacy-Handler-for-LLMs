@@ -1,0 +1,6 @@
+{
+  "best_f1_score": 0.95,
+  "total_epochs": 2,
+  "training_samples": 900,
+  "validation_samples": 100
+}
